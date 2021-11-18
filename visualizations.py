@@ -29,34 +29,36 @@ text = bars.mark_text(
 
 st.write((bars + text).properties(height=600, width=600))
 
-
-
-
-data2 = pd.DataFrame({
-    'Key Product Attributes' : ['resolution', 'lens quality','sensor sensitivity','quick focus','low light performance','accessories','TTL viewing','Dust Removal System','Low Battery Consumption','Customizability'],
-    'Product_1' : [5, 3, 1, 2, 5, 4, 1, 4, 3, 3],
-    'Product_2' : [3, 5, 5, 4, 5, 2, 3, 4, 1, 1],
-})
+data2 = pd.DataFrame([
+    ['resolution', 5, 'Product_1'],
+    ['lens quality', 3, 'Product_1'],
+    ['sensor sensitivity', 1, 'Product_1'],
+    ['quick focus', 2, 'Product_1'],
+    ['low light performance', 5, 'Product_1'],
+    ['accessories', 4, 'Product_1'],
+    ['TTL viewing', 1 , 'Product_1'],
+    ['Dust Removal System', 4, 'Product_1'],
+    ['Low Battery Consumption', 3, 'Product_1'],
+    ['Customizability', 3, 'Product_1'],
+    ['resolution', 3, 'Product_2'],
+    ['lens quality', 5, 'Product_2'],
+    ['sensor sensitivity', 5, 'Product_2'],
+    ['quick focus', 4, 'Product_2'],
+    ['low light performance', 5, 'Product_2'],
+    ['accessories', 2, 'Product_2'],
+    ['TTL viewing', 3 , 'Product_2'],
+    ['Dust Removal System', 4, 'Product_2'],
+    ['Low Battery Consumption', 1, 'Product_2'],
+    ['Customizability', 1, 'Product_2'],
+], columns=['Key Product Attributes', 'Rating','Product_type'])
 
 st.write(data2)
 
-base = alt.Chart(data2).properties(
-    width=250
+chart = alt.Chart(data2).mark_bar().encode(
+    column='Key Product Attributes:N',
+    x=alt.X('Product_type'),
+    y= alt.Y('Rating:Q', scale=alt.Scale(domain=[0,6])),
+    color=alt.Color('Product_type', scale=alt.Scale(range=['#3399FF','#FF9966']))
+
 )
-
-left = base.encode(
-    y=alt.Y('Key Product Attributes:O', axis=None, sort=None),
-    x=alt.X('Product_1:Q', title='Product1',sort=alt.SortOrder('descending')),
-).mark_bar().properties(title='Product1')
-
-middle = base.encode(
-    y=alt.Y('Key Product Attributes:O', axis=None, sort=None),
-    text=alt.Text('Key Product Attributes:O'),
-).mark_text(color='white').properties(width=150)
-
-right = base.encode(
-    y=alt.Y('Key Product Attributes:O', axis=None, sort=None),
-    x=alt.X('Product_2:Q', title='Product2'),
-).mark_bar().properties(title='Product2')
-
-st.altair_chart(alt.concat(left, middle, right, spacing=5), use_container_width=True)
+st.altair_chart(chart)
