@@ -7,8 +7,9 @@ import altair as alt
 st.title("AutoMR")
 
 data = pd.DataFrame({
-    'Key Product Attributes' : ['picture quality','battery life', 'weight','brand'],
-    'Number of Mentions' : [400, 300, 100, 20]
+    'Key Product Attributes' : ['picture quality','brand', 'LCD and viewfinder','Battery', 'Lens', 'Stablization', 
+                               'Video and sound', 'Shuttter Speed', 'Software', 'Warranty', 'Zoom and Flash'],
+    'Number of Mentions' : [72521, 38709, 29186, 28244, 23152, 23114, 22139, 21576, 15397, 15226, 14014]
 })
 
 st.write(data)
