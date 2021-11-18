@@ -2,7 +2,7 @@
 
 ## This is Git Repo for Consumer Review NLP Project for FourthBrain
 ##
-## Team Members: Paras Jain, Minha Hwang, Jay Lim
+## Team Members: Paras Jain, Minha Hwang, Jay Shim
 ##
 ## Idea: Use Amazon Consumer Review to find (1) the most important product attributes (latent) and (2) purchase structures among products (i.e. similarity / dissimilarity)
 
