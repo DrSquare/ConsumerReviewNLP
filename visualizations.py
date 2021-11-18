@@ -30,28 +30,34 @@ text = bars.mark_text(
 
 st.write((bars + text).properties(height=600, width=600))
 
+'picture quality','brand', 'LCD and viewfinder','Battery', 'Lens', 'Stablization', 
+                               'Video and sound', 'Shuttter Speed', 'Software', 'Warranty', 'Zoom and Flash'
+
 data2 = pd.DataFrame([
-    ['resolution', 5, 'Product_1'],
-    ['lens quality', 3, 'Product_1'],
-    ['sensor sensitivity', 1, 'Product_1'],
-    ['quick focus', 2, 'Product_1'],
-    ['low light performance', 5, 'Product_1'],
-    ['accessories', 4, 'Product_1'],
-    ['TTL viewing', 1 , 'Product_1'],
-    ['Dust Removal System', 4, 'Product_1'],
-    ['Low Battery Consumption', 3, 'Product_1'],
-    ['Customizability', 3, 'Product_1'],
-    ['resolution', 3, 'Product_2'],
-    ['lens quality', 5, 'Product_2'],
-    ['sensor sensitivity', 5, 'Product_2'],
-    ['quick focus', 4, 'Product_2'],
-    ['low light performance', 5, 'Product_2'],
-    ['accessories', 2, 'Product_2'],
-    ['TTL viewing', 3 , 'Product_2'],
-    ['Dust Removal System', 4, 'Product_2'],
-    ['Low Battery Consumption', 1, 'Product_2'],
-    ['Customizability', 1, 'Product_2'],
-], columns=['Key Product Attributes', 'Rating','Product_type'])
+    ['picture quality', 5, 'Nikon D7000'],
+    ['brand', 5, 'Nikon D7000'],
+    ['LCD and viewfinder', 5, 'Nikon D7000'],
+    ['Battery', 5, 'Nikon D7000'],
+    ['Lens', 5, 'Nikon D7000'],
+    ['Stablization', 5, 'Nikon D7000'],
+    ['Video and sound', 5 , 'Nikon D7000'],
+    ['Shuttter Speed', 5, 'Nikon D7000'],
+    ['Software', 5, 'Nikon D7000'],
+    ['Warranty', 1, 'Nikon D7000'],
+    ['Zoom and Flash', 5, 'Nikon D7000'],
+    
+    ['picture quality', 5, 'Canon EOS 6D'],
+    ['brand', 5, 'Canon EOS 6D'],
+    ['LCD and viewfinder', 5, 'Canon EOS 6D'],
+    ['Battery', 1, 'Canon EOS 6D'],
+    ['Lens', 5, 'Canon EOS 6D'],
+    ['Stablization', 5, 'Canon EOS 6D'],
+    ['Video and sound', 5 , 'Canon EOS 6D'],
+    ['Shuttter Speed', 5, 'Canon EOS 6D'],
+    ['Software', 5, 'Canon EOS 6D'],
+    ['Warranty', 5, 'Canon EOS 6D'],
+    ['Zoom and Flash', 5, 'Canon EOS 6D']
+  ], columns=['Key Product Attributes', 'Rating','Product_type'])
 
 st.write(data2)
 
