@@ -1,18 +1,18 @@
-### Automated Market Intelligence
+## Automated Market Intelligence
 
-## This is Git Repo for Automated Market Intelligence (based on Amazon Consumer Reviews)
-##
-## Team Members: Minha Hwang, Michael Trusov
-##
-## Idea: Use prompt engineering and short-sentence transformer embedding to to find (1) important product attributes (latent) and (2) consumer attribute-level sentiments for key brands/products
+#### This is Git Repo for Automated Market Intelligence (based on Amazon Consumer Reviews)
+####
+#### Team Members: Minha Hwang, Michael Trusov
+####
+#### Idea: Use prompt engineering and short-sentence transformer embedding to find (1) important product attributes (latent) and (2) consumer attribute-level sentiments for key brands/products
 
-## 1. Dataset: 
+### 1. Dataset: 
 (1) Standford SNAP - Amazon Consumer Review: Loaded in Git Repo
 https://snap.stanford.edu/data/web-Amazon.html
 
 (2) IRI Academic Dataset: To be loaded, Description paper in the link below
-https://www.dropbox.com/s/lvdjlc67uvo94nr/The%20IRI%20Marketing%20Data%20Set.pdf
-## Both datasets are licensed only for research purposes. Please be careful not to distribute these beyond this project. 
+https://www.dropbox.com/s/lvdjlc67uvo94nr/The%20IRI%20Marketing%20Data%20Set.pdf <br>
+Both datasets are licensed only for research purposes. Please be careful not to distribute these beyond this project. 
 
 ## 2. Key Reference: Note that there have been sizable NLP research before the application of LLM. However, those efforts were not scalable due to high-cost manual labeling tasks. 
 (1) J. McAuley and J. Leskovec. "Hidden factors and hidden topics: understanding rating dimensions with review text," RecSys, 2013.
@@ -28,7 +28,6 @@ https://www0.gsb.columbia.edu/mygsb/faculty/research/pubfiles/4468/Netzer_Feldma
 https://journals.sagepub.com/doi/abs/10.1509/jmkr.48.5.881
 
 ## 3. Next steps:
-Validation against survey data <br>
-Refine prompts and clustering approach <br>
-(1) Explore datasets
-(2) Pick 1 product category to focus
+(1) Validate results against survey data <br>
+(2) Refine prompts and clustering approach <br>
+
