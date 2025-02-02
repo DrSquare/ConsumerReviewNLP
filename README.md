@@ -1,10 +1,10 @@
-# ConsumerReviewNLP
+### Automated Market Intelligence
 
-## This is Git Repo for Consumer Review NLP Project for FourthBrain
+## This is Git Repo for Automated Market Intelligence (based on Amazon Consumer Reviews)
 ##
-## Team Members: Paras Jain, Minha Hwang, Jay Shim
+## Team Members: Minha Hwang, Michael Trusov
 ##
-## Idea: Use Amazon Consumer Review to find (1) the most important product attributes (latent) and (2) purchase structures among products (i.e. similarity / dissimilarity)
+## Idea: Use prompt engineering and short-sentence transformer embedding to to find (1) important product attributes (latent) and (2) consumer attribute-level sentiments for key brands/products
 
 ## 1. Dataset: 
 (1) Standford SNAP - Amazon Consumer Review: Loaded in Git Repo
@@ -14,7 +14,7 @@ https://snap.stanford.edu/data/web-Amazon.html
 https://www.dropbox.com/s/lvdjlc67uvo94nr/The%20IRI%20Marketing%20Data%20Set.pdf
 ## Both datasets are licensed only for research purposes. Please be careful not to distribute these beyond this project. 
 
-## 2. Key Reference: Note that there are sizable NLP research before Deep Learning 
+## 2. Key Reference: Note that there have been sizable NLP research before the application of LLM. However, those efforts were not scalable due to high-cost manual labeling tasks. 
 (1) J. McAuley and J. Leskovec. "Hidden factors and hidden topics: understanding rating dimensions with review text," RecSys, 2013.
 http://i.stanford.edu/~julian/pdfs/recsys13.pdf
 
@@ -28,5 +28,7 @@ https://www0.gsb.columbia.edu/mygsb/faculty/research/pubfiles/4468/Netzer_Feldma
 https://journals.sagepub.com/doi/abs/10.1509/jmkr.48.5.881
 
 ## 3. Next steps:
+Validation against survey data <br>
+Refine prompts and clustering approach <br>
 (1) Explore datasets
 (2) Pick 1 product category to focus
